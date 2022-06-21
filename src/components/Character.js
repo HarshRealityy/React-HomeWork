@@ -1,11 +1,18 @@
 import './Character.css'
 function Character (props) {
-    let {name, desc, picture} = props;
+    let {id, name, status, species,gender,image} = props;
     return (
         <div>
-            <h2 className={'target'}>{name}</h2>
-            <p>{desc}</p>
-            <img src={picture}/>
+            <h1>{name}</h1>
+            <h2>{id}</h2>
+            <ul>
+                <li>{status}</li>
+                <li>{species}</li>
+                <li>{gender}</li>
+            </ul>
+
+            <img src={image}/>
+
         </div>
     )
 }
